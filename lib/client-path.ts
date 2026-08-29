@@ -1,5 +1,5 @@
 export function appPath(path: string) {
-  const configuredBasePath = process.env.NEXT_PUBLIC_APP_BASE_PATH ?? '';
+  const configuredBasePath = typeof process !== 'undefined' ? process.env.NEXT_PUBLIC_APP_BASE_PATH ?? '' : '';
   const runtimeBasePath = typeof window !== 'undefined' && window.location.pathname.startsWith('/video') ? '/video' : '';
   const basePath = configuredBasePath || runtimeBasePath;
   if (!basePath || path === basePath || path.startsWith(`${basePath}/`)) return path;
