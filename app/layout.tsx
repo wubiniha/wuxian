@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: 'Frameflow — 无限画布工作台',
-  description: '把剧本、角色、画面和视频放在同一张无限画布上。',
+  title: 'Wuxian Canvas — 精简无限画布',
+  description: '独立的无限画布节点工作台，可管理本地资产并调用多种 AI 模型。',
 };
 
 export default function RootLayout({
